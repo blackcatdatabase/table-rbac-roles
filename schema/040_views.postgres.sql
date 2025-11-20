@@ -1,4 +1,4 @@
--- Auto-generated from schema-views-postgres.psd1 (map@9d3471b)
+-- Auto-generated from schema-views-postgres.psd1 (map@62c9c93)
 -- engine: postgres
 -- table:  rbac_roles
 -- Contract view for [rbac_roles]
@@ -7,7 +7,7 @@ SELECT
   id, repo_id, slug, name, description, version, status, created_at, updated_at
 FROM rbac_roles;
 
--- Auto-generated from schema-views-postgres.psd1 (map@9d3471b)
+-- Auto-generated from schema-views-postgres.psd1 (map@62c9c93)
 -- engine: postgres
 -- table:  rbac_roles_coverage
 -- Role coverage: permissions per role (allow/deny)

@@ -1,4 +1,4 @@
--- Auto-generated from schema-views-mysql.psd1 (map@db2f8b8)
+-- Auto-generated from schema-views-mysql.psd1 (map@62c9c93)
 -- engine: mysql
 -- table:  rbac_roles
 -- Contract view for [rbac_roles]
@@ -15,7 +15,7 @@ SELECT
   updated_at
 FROM rbac_roles;
 
--- Auto-generated from schema-views-mysql.psd1 (map@db2f8b8)
+-- Auto-generated from schema-views-mysql.psd1 (map@62c9c93)
 -- engine: mysql
 -- table:  rbac_roles_coverage
 -- Role coverage: permissions per role (allow/deny)
