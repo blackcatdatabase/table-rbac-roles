@@ -1,6 +1,7 @@
--- Auto-generated from feature-modules-postgres.psd1 (map@mtime:2025-11-27T13:56:21Z)
+-- Auto-generated from feature-modules-postgres.yaml (map@94ebe6c)
 -- engine: postgres
 -- table:  rbac_roles_coverage
+
 CREATE OR REPLACE VIEW vw_rbac_roles_coverage AS
 SELECT
   rr.id   AS role_id,
