@@ -5,15 +5,15 @@ RBAC role definitions synchronized from repositories.
 ## Columns
 | Column | Type | Null | Default | Description |
 | --- | --- | --- | --- | --- |
-| created_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
-| description | TEXT | YES |  | Optional description. |
 | id | BIGINT | NO |  | Surrogate primary key. |
-| name | VARCHAR(200) | NO |  | Human name of the role. |
 | repo_id | BIGINT | YES |  | Owning repository (FK rbac_repositories.id). |
 | slug | VARCHAR(120) | NO |  | Stable role slug. |
-| status | ENUM('active','deprecated','archived') | NO | active | Lifecycle status. (enum: active, deprecated, archived) |
-| updated_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Last update timestamp (UTC). |
+| name | VARCHAR(200) | NO |  | Human name of the role. |
+| description | TEXT | YES |  | Optional description. |
 | version | mysql: INT / postgres: INTEGER | NO | 1 | Version number from the repo. |
+| status | ENUM('active','deprecated','archived') | NO | active | Lifecycle status. (enum: active, deprecated, archived) |
+| created_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
+| updated_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Last update timestamp (UTC). |
 
 ## Engine Details
 
