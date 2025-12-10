@@ -102,8 +102,8 @@ _No engine differences detected._
 ## Constraints Snapshot
 - `created_at` – default=CURRENT_TIMESTAMP(6)
 - `status` – default=active, enum
-- `version` – default=1
 - `updated_at` – default=CURRENT_TIMESTAMP(6)
+- `version` – default=1
 
 ## Schema Files
 | File | Engine |
