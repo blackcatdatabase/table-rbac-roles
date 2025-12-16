@@ -41,11 +41,11 @@ final class Criteria extends BaseCriteria
         return [ 'slug', 'name', 'description' ];
     }
 
-/** Columns allowed in ORDER BY (falls back to filterable() when empty). */
-protected function sortable(): array
-{
-    return [ 'id', 'repo_id', 'slug', 'name', 'description', 'version', 'status', 'created_at', 'updated_at' ];
-}
+    /** Columns allowed in ORDER BY (falls back to filterable() when empty). */
+    protected function sortable(): array
+    {
+        return [ 'id', 'repo_id', 'slug', 'name', 'description', 'version', 'status', 'created_at', 'updated_at' ];
+    }
 
     /**
      * Whitelist of joinable entities (for safe ->join() usage):
