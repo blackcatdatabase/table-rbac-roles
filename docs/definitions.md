@@ -3,17 +3,17 @@
 RBAC role definitions synchronized from repositories.
 
 ## Columns
-| Column | Type | Null | Default | Description |
-| --- | --- | --- | --- | --- |
-| id | BIGINT | NO |  | Surrogate primary key. |
-| repo_id | BIGINT | YES |  | Owning repository (FK rbac_repositories.id). |
-| slug | VARCHAR(120) | NO |  | Stable role slug. |
-| name | VARCHAR(200) | NO |  | Human name of the role. |
-| description | TEXT | YES |  | Optional description. |
-| version | mysql: INT / postgres: INTEGER | NO | 1 | Version number from the repo. |
-| status | ENUM('active','deprecated','archived') | NO | active | Lifecycle status. (enum: active, deprecated, archived) |
-| created_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
-| updated_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Last update timestamp (UTC). |
+| Column | Type | Null | Default | Description | Crypto |
+| --- | --- | --- | --- | --- | --- |
+| id | BIGINT | NO |  | Surrogate primary key. |  |
+| repo_id | BIGINT | YES |  | Owning repository (FK rbac_repositories.id). |  |
+| slug | VARCHAR(120) | NO |  | Stable role slug. |  |
+| name | VARCHAR(200) | NO |  | Human name of the role. |  |
+| description | TEXT | YES |  | Optional description. |  |
+| version | mysql: INT / postgres: INTEGER | NO | 1 | Version number from the repo. |  |
+| status | mysql: ENUM('active','deprecated','archived') | NO | active | Lifecycle status. (enum: active, deprecated, archived) |  |
+| created_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |  |
+| updated_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Last update timestamp (UTC). |  |
 
 ## Engine Details
 
